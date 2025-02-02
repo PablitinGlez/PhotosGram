@@ -1,0 +1,28 @@
+.logo{
+    margin-top: 10px;
+}
+
+/* Elimina la sombra del header/toolbar */
+ion-toolbar {
+    --box-shadow: none;
+    /* Elimina la sombra */
+    --border-width: 0;
+    /* Elimina el borde si lo hay */
+}
+/* Elimina el efecto de clic (ripple effect) en los botones */
+ion-button {
+    --ripple-color: transparent !important;
+
+}
+
+
+/* Elimina el efecto de clic (ripple effect) */
+ion-button {
+    --ripple-color: transparent !important;
+    --background-hover: transparent !important;
+    /* Evita el fondo gris al pasar el cursor */
+    --background-focused: transparent !important;
+    /* Evita el fondo gris cuando está enfocado */
+    --background-activated: transparent !important;
+    /* Evita el fondo gris al hacer clic */
+}

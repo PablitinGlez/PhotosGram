@@ -1,0 +1,78 @@
+:root {
+    /* Color primario: Utilizado para elementos principales como botones y destacados */
+    --ion-color-primary: #405DE6; /* Azul de Instagram */
+    --ion-color-primary-rgb: 64,93,230;
+    --ion-color-primary-contrast: #ffffff; /* Texto claro sobre el azul */
+    --ion-color-primary-contrast-rgb: 255,255,255;
+    --ion-color-primary-shade: #3852cc; /* Tonos más oscuros del azul */
+    --ion-color-primary-tint: #536de9; /* Tonos más claros del azul */
+
+    /* Color secundario: Utilizado para elementos secundarios y complementarios */
+    --ion-color-secondary: #FFDC80; /* Amarillo de Instagram */
+    --ion-color-secondary-rgb: 255,220,128;
+    --ion-color-secondary-contrast: #000000; /* Texto oscuro sobre el amarillo */
+    --ion-color-secondary-contrast-rgb: 0,0,0;
+    --ion-color-secondary-shade: #e0c270; /* Tonos más oscuros del amarillo */
+    --ion-color-secondary-tint: #ffe08d; /* Tonos más claros del amarillo */
+
+    /* Color terciario: Utilizado para acentos y detalles adicionales */
+    --ion-color-tertiary: #FD1D1D; /* Rojo de Instagram */
+    --ion-color-tertiary-rgb: 253,29,29;
+    --ion-color-tertiary-contrast: #ffffff; /* Texto claro sobre el rojo */
+    --ion-color-tertiary-contrast-rgb: 255,255,255;
+    --ion-color-tertiary-shade: #df1a1a; /* Tonos más oscuros del rojo */
+    --ion-color-tertiary-tint: #fd3434; /* Tonos más claros del rojo */
+
+    /* Color de éxito: Utilizado para indicar acciones exitosas o positivas */
+    --ion-color-success: #4CAF50; /* Verde de Instagram */
+    --ion-color-success-rgb: 76,175,80;
+    --ion-color-success-contrast: #ffffff; /* Texto claro sobre el verde */
+    --ion-color-success-contrast-rgb: 255,255,255;
+    --ion-color-success-shade: #439a47; /* Tonos más oscuros del verde */
+    --ion-color-success-tint: #5eb762; /* Tonos más claros del verde */
+
+    /* Color de advertencia: Utilizado para alertas o avisos */
+    --ion-color-warning: #FFC107; /* Amarillo de advertencia */
+    --ion-color-warning-rgb: 255,193,7;
+    --ion-color-warning-contrast: #000000; /* Texto oscuro sobre el amarillo */
+    --ion-color-warning-contrast-rgb: 0,0,0;
+    --ion-color-warning-shade: #e0a806; /* Tonos más oscuros del amarillo */
+    --ion-color-warning-tint: #ffc71f; /* Tonos más claros del amarillo */
+
+    /* Color de peligro: Utilizado para errores o acciones críticas */
+    --ion-color-danger: #E53935; /* Rojo de peligro */
+    --ion-color-danger-rgb: 229,57,53;
+    --ion-color-danger-contrast: #ffffff; /* Texto claro sobre el rojo */
+    --ion-color-danger-contrast-rgb: 255,255,255;
+    --ion-color-danger-shade: #ca322f; /* Tonos más oscuros del rojo */
+    --ion-color-danger-tint: #e84d49; /* Tonos más claros del rojo */
+
+    /* Color claro: Utilizado para fondos claros y elementos de interfaz */
+    --ion-color-light: #F8F9FA; /* Gris claro */
+    --ion-color-light-rgb: 248,249,250;
+    --ion-color-light-contrast: #000000; /* Texto oscuro sobre el fondo claro */
+    --ion-color-light-contrast-rgb: 0,0,0;
+    --ion-color-light-shade: #dadbdc; /* Tonos más oscuros del gris claro */
+    --ion-color-light-tint: #f9fafb; /* Tonos más claros del gris claro */
+
+    /* Color medio: Utilizado para textos secundarios y bordes */
+    --ion-color-medium: #6C757D; /* Gris medio */
+    --ion-color-medium-rgb: 108,117,125;
+    --ion-color-medium-contrast: #ffffff; /* Texto claro sobre el gris medio */
+    --ion-color-medium-contrast-rgb: 255,255,255;
+    --ion-color-medium-shade: #5f666e; /* Tonos más oscuros del gris medio */
+    --ion-color-medium-tint: #7b838a; /* Tonos más claros del gris medio */
+
+    /* Color oscuro: Utilizado para textos principales y fondos oscuros */
+    --ion-color-dark: #343A40; /* Gris oscuro */
+    --ion-color-dark-rgb: 52,58,64;
+    --ion-color-dark-contrast: #ffffff; /* Texto claro sobre el fondo oscuro */
+    --ion-color-dark-contrast-rgb: 255,255,255;
+    --ion-color-dark-shade: #2e3338; /* Tonos más oscuros del gris oscuro */
+    --ion-color-dark-tint: #484e53; /* Tonos más claros del gris oscuro */
+}
+
+
+ion-icon{
+    color:var(--ion-color-dark-contrast);
+}
