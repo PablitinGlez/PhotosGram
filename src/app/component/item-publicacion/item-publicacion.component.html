@@ -1,0 +1,54 @@
+<ion-card *ngFor="let post of posts">
+  <!-- Encabezado: Foto de perfil + Nombre de usuario + Verificación + Ubicación/Música -->
+  <ion-item>
+    <ion-avatar slot="start">
+      <img [src]="post.userProfilePic" alt="Profile Picture">
+    </ion-avatar>
+    <ion-label>
+      <h2>
+        {{ post.username }}
+       <img
+          *ngIf="post.verified"
+          src="assets/verificacion.png"
+          alt="Verified"
+          class="verified-icon"
+          
+        />
+      </h2>
+      <p>{{ post.location || post.music }}</p>
+    </ion-label>
+  </ion-item>
+
+  <!-- Carrusel de imágenes/videos -->
+<ng-container *ngIf="post.media.length > 0">
+    <img *ngIf="post.media[0].type === 'image'" [src]="post.media[0].url" alt="Post Image">
+    <video *ngIf="post.media[0].type === 'video'" controls>
+      <source [src]="post.media[0].url" type="video/mp4">
+    </video>
+  </ng-container>
+ 
+  <!-- Footer: Acciones y Descripción -->
+  <ion-row class="actions">
+    <ion-button fill="clear" >
+       <img src="assets/Like.svg" alt="Like" class="custom-icon" >
+    </ion-button>
+    <ion-button fill="clear" >
+      <img src="assets/" alt="Like" class="custom-icon" >
+    </ion-button>
+    <ion-button fill="clear">
+       <img src="assets/Like.svg" alt="Like" class="custom-icon" >
+    </ion-button>
+    <ion-button fill="clear" class="save-btn">
+      <img src="Bookmark.svg" alt="Like" class="custom-icon" >
+    </ion-button>
+  </ion-row>
+
+  <p><strong>{{ post.likes }} Me gusta</strong></p>
+  <p><strong>{{ post.username }}</strong> {{ post.description }}</p>
+  <p>{{ post.date }}</p>
+  <p>{{ post.comments.length }} comentarios</p>
+</ion-card>
+
+
+
+<!--(click)="likePost(post)" (click)="commentPost(post)" -->

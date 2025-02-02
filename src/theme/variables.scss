@@ -1,5 +1,9 @@
 :root {
     /* Color primario: Utilizado para elementos principales como botones y destacados */
+
+    --ion-color-background:#000000;
+
+
     --ion-color-primary: #405DE6; /* Azul de Instagram */
     --ion-color-primary-rgb: 64,93,230;
     --ion-color-primary-contrast: #ffffff; /* Texto claro sobre el azul */
@@ -75,4 +79,31 @@
 
 ion-icon{
     color:var(--ion-color-dark-contrast);
+}
+
+
+ion-item {
+    --background: transparent;
+    --border-style: none;
+    /* Elimina el estilo del borde */
+    --border-width: 0;
+    /* Elimina el ancho del borde */
+    --border-color: transparent;
+    /* Elimina el color del borde */
+    --inner-border-width: 0;
+    /* Elimina el borde interno */
+    --padding-start: 10px;
+    --padding-end: 10px;
+    --padding-top: 10px;
+    --padding-bottom: 10px;
+}
+
+ion-button {
+    --ripple-color: transparent !important;
+    --background-hover: transparent !important;
+
+    --background-focused: transparent !important;
+
+    --background-activated: transparent !important;
+
 }

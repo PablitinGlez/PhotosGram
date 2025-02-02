@@ -1,0 +1,94 @@
+ion-card, ion-item{
+--background: var(--ion-color-background);
+}
+
+
+ion-card {
+    border-radius: 12px;
+    box-shadow: none;
+    background-color: #000;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 0;
+}
+
+ion-item {
+    --background: transparent;
+    --border-bottom: none !important;
+    padding: 5px;
+}
+
+ion-item::part(native) {
+    border-bottom: none !important;
+}
+
+ion-avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+   
+}
+
+ion-label h2 {
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+ion-icon[name="checkmark-circle"] {
+    color: #0095f6;
+    margin-left: 4px;
+    font-size: 14px;
+}
+
+ion-label p {
+    font-size: 12px;
+    color: #aaa;
+}
+
+img,
+video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+ion-button {
+    --color: white;
+    --padding-start: 0;
+    --padding-end: 0;
+    font-size: 22px;
+}
+
+.save-btn {
+    margin-left: auto;
+}
+
+p {
+    font-size: 14px;
+}
+
+p strong {
+    font-weight: bold;
+}
+
+p:last-of-type {
+    color: #aaa;
+    font-size: 12px;
+}
+
+
+.verified-icon{
+    width: 30px;
+}
+
+.custom-icon{
+    width: 30px;
+}
+

@@ -12,6 +12,7 @@ import { addIcons } from 'ionicons';
 import {
   heartOutline
 } from 'ionicons/icons';
+import { ItemPublicacionComponent } from '../component/item-publicacion/item-publicacion.component';
 import { ExploreContainerComponent } from '../explore-container/explore-container.component';
 
 @Component({
@@ -28,6 +29,7 @@ import { ExploreContainerComponent } from '../explore-container/explore-containe
     IonButton,
     IonIcon,
     ExploreContainerComponent,
+    ItemPublicacionComponent,
   ],
 })
 export class Tab1Page {
