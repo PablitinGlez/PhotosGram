@@ -1,0 +1,24 @@
+<div class="stories-container">
+  <!-- Primera historia (Usuario) -->
+  <div class="story">
+    <div class="story-avatar user-story">
+      <ion-avatar>
+        <img src="https://i.pinimg.com/736x/9f/31/9f/9f319ff97e977f9daa3b637157c41057.jpg" alt="Tu Historia">
+      </ion-avatar>
+      <div class="add-icon">
+        <ion-icon name="add-outline"></ion-icon>
+      </div>
+    </div>
+    <p class="story-name">Tu historia</p>
+  </div>
+
+  <!-- Historias de otros usuarios -->
+  <div class="story" *ngFor="let story of stories">
+    <div class="story-avatar">
+      <ion-avatar>
+        <img [src]="story.profilePic" alt="{{ story.username }}">
+      </ion-avatar>
+    </div>
+    <p class="story-name">{{ story.username }}</p>
+  </div>
+</div>

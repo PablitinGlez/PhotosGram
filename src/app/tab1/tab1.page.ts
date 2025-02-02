@@ -12,6 +12,7 @@ import { addIcons } from 'ionicons';
 import {
   heartOutline
 } from 'ionicons/icons';
+import { ItemHistoryComponent } from '../component/item-history/item-history.component';
 import { ItemPublicacionComponent } from '../component/item-publicacion/item-publicacion.component';
 import { ExploreContainerComponent } from '../explore-container/explore-container.component';
 
@@ -30,6 +31,7 @@ import { ExploreContainerComponent } from '../explore-container/explore-containe
     IonIcon,
     ExploreContainerComponent,
     ItemPublicacionComponent,
+    ItemHistoryComponent
   ],
 })
 export class Tab1Page {

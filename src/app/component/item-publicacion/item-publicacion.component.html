@@ -15,7 +15,7 @@
           
         />
       </h2>
-      <p>{{ post.location || post.music }}</p>
+      <div><p>{{ post.location || post.music }}</p></div>
     </ion-label>
   </ion-item>
 
@@ -28,25 +28,33 @@
   </ng-container>
  
   <!-- Footer: Acciones y Descripción -->
-  <ion-row class="actions">
-    <ion-button fill="clear" >
-       <img src="assets/Like.svg" alt="Like" class="custom-icon" >
-    </ion-button>
-    <ion-button fill="clear" >
-      <img src="assets/" alt="Like" class="custom-icon" >
-    </ion-button>
-    <ion-button fill="clear">
-       <img src="assets/Like.svg" alt="Like" class="custom-icon" >
-    </ion-button>
-    <ion-button fill="clear" class="save-btn">
-      <img src="Bookmark.svg" alt="Like" class="custom-icon" >
-    </ion-button>
-  </ion-row>
+<ion-row class="actions">
+  <!-- Botón de Like con la cantidad de likes -->
+  <ion-button fill="clear">
+    <img src="assets/Like.svg" alt="Like" class="custom-icon">
+    <span>{{ post.likes }}</span>
+  </ion-button>
 
-  <p><strong>{{ post.likes }} Me gusta</strong></p>
-  <p><strong>{{ post.username }}</strong> {{ post.description }}</p>
-  <p>{{ post.date }}</p>
-  <p>{{ post.comments.length }} comentarios</p>
+  <!-- Botón de Comment con la cantidad de comentarios -->
+  <ion-button fill="clear">
+    <img src="assets/Comment.svg" alt="Comment" class="custom-icon">
+    <span>{{ post.comments.length }}</span>
+  </ion-button>
+
+  <!-- Botón de Share -->
+  <ion-button fill="clear">
+    <img src="assets/Share.svg" alt="Share" class="custom-icon">
+  </ion-button>
+
+  <!-- Botón de Save -->
+  <ion-button fill="clear" class="save-btn">
+    <img src="assets/Bookmark.svg" alt="Save" class="custom-icon">
+  </ion-button>
+</ion-row>
+  <p class="footer"><strong>{{ post.likes }} Me gusta</strong></p>
+  <p class="footer"><strong>{{ post.username }}</strong> {{ post.description }}</p>
+  <p class="footer">{{ post.date }}</p>
+  <p class="footer">{{ post.comments.length }} comentarios</p>
 </ion-card>
 
 

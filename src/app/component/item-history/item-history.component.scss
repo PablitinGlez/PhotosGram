@@ -1,0 +1,92 @@
+.stories-container {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    gap: 10px;
+}
+
+.story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.story-avatar {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    padding: 3px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.story-avatar ion-avatar {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.story-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-story {
+    background: none;
+}
+
+.user-story ion-avatar {
+    border: 2px solid #ccc;
+}
+
+.add-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #0095f6;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+}
+
+.add-icon ion-icon {
+    font-size: 16px;
+    color: white;
+}
+
+.story-name {
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+    width: 80px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.stories-container {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    gap: 10px;
+    white-space: nowrap;
+    /* Evita el salto de línea */
+}
+
+.stories-container::-webkit-scrollbar {
+    display: none;
+    /* Oculta la barra de desplazamiento en navegadores webkit */
+}

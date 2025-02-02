@@ -16,6 +16,19 @@ ion-item {
     --background: transparent;
     --border-bottom: none !important;
     padding: 5px;
+    margin: 0 !important;
+        /* Eliminar margen */
+        padding: 0 !important;
+        /* Eliminar padding */
+}
+
+ion-row {
+    --ion-grid-column-padding: 0;
+    /* Eliminar padding de las columnas */
+    padding: 0  !important;
+    /* Eliminar padding */
+    margin: 0;
+    /* Eliminar margen */
 }
 
 ion-item::part(native) {
@@ -71,7 +84,7 @@ ion-button {
 }
 
 p {
-    font-size: 14px;
+    font-size: 13px;
 }
 
 p strong {
@@ -89,6 +102,16 @@ p:last-of-type {
 }
 
 .custom-icon{
-    width: 30px;
+    width: 25px;
 }
 
+
+span{
+    font-size: 13px;
+    margin-left: 5px;
+    letter-spacing:.5px;
+}
+
+.footer{
+   margin: 7px;
+}
